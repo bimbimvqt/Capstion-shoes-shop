@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: relative;
+  background-color: #000000;
+  height: 50px;
+  border: 1px solid #000000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo img {
+  position: absolute;
+  width: 116px;
+  height: 32px;
+  left: 24px;
+  top: 10px;
+}
+.header .container nav span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.header .container nav a {
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f7f7f7;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  height: 50px;
+}
+.menu nav .container-fluid .navbar-brand {
+  position: absolute;
+  left: 25px;
+  top: 18px;
+  height: 24px;
+  width: 56px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.menu .collapse .navbar-nav .nav-item .one {
+  position: absolute;
+  left: 105px;
+  top: 16px;
+  width: 41px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #191919;
+  opacity: 0.7;
+}
+.menu .collapse .navbar-nav .nav-item .two {
+  position: absolute;
+  width: 70px;
+  height: 24px;
+  left: 183px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #191919;
+  opacity: 0.7;
+}
+.menu .collapse .navbar-nav .nav-item .three {
+  position: absolute;
+  width: 31px;
+  height: 24px;
+  left: 292px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #191919;
+  opacity: 0.7;
+}
+.menu .collapse .navbar-nav .nav-item .four {
+  position: absolute;
+  width: 52px;
+  height: 24px;
+  left: 363px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #191919;
+  opacity: 0.7;
+}
+
+.carousel {
+  position: relative;
+  height: 530px;
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/image 6.png");
+}
+.carousel .container .slick_slider .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel .container .slick_slider .item .item-right h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  height: 51px;
+  width: 291px;
+}
+.carousel .container .slick_slider .item .item-right p {
+  width: 291px;
+  height: 51px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.carousel .container .slick_slider .item .item-right button {
+  width: 150px;
+  height: 50px;
+  background: #F8B653;
+  border: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(234, 40, 40);
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: rgb(198, 90, 90);
+  font-size: 20px;
+}
+
+.slick-dots li button:before {
+  color: gray;
+  font-size: 20px;
+}
