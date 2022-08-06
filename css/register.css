@@ -1,0 +1,130 @@
+.register .container h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.register .container .form-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.register .container .form-content .form-group {
+  width: 500px;
+  position: relative;
+}
+.register .container .form-content .form-group label {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.register .container .form-content .form-group label .label1 {
+  margin-right: 20px;
+  right: -150px;
+  top: 18px;
+}
+.register .container .form-content .form-group label .label2 {
+  top: -62px;
+  right: -300px;
+}
+.register .container .form-content .form-group .gender {
+  padding-right: 30px;
+  position: absolute;
+  top: 55px;
+}
+.register .container .form-content .form-group input {
+  position: relative;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(100turn, #ae18e2, #000000);
+  border-image-slice: 1;
+  width: 100%;
+}
+.register .container .form-content .form-group span {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  color: #f50e0e;
+}
+.register .container .form-content .form-group .tbPassword {
+  top: 30px;
+}
+.register .container .form-content .form-group button {
+  position: absolute;
+  width: 291px;
+  height: 50px;
+  left: 0%;
+  top: 100%;
+  right: 0%;
+  bottom: 0%;
+  background-color: #ae18e2;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  border: none;
+}
+.register .container .form-content .password {
+  margin-top: -90px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer img {
+  width: 100%;
+}
+
+[type=radio]:checked,
+[type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=radio]:checked + label,
+[type=radio]:not(:checked) + label {
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+[type=radio]:checked + label:before,
+[type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 36px;
+  height: 27px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type=radio]:checked + label:after,
+[type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 24px;
+  height: 17px;
+  background: #ae18e2;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type=radio]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
