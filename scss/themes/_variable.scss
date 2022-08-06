@@ -3,6 +3,7 @@ $bg-c1-pink: #b61984;
 
 $bg-c1-light: #fff;
 $bg-c2-light: #dcd1f3;
+$bg-c3-light: #f8f8f8;
 $bg-c1-dark: #000000;
 $bg-none: none;
 
@@ -14,13 +15,20 @@ $text-c1-light: #fff;
 $text-c2-light: #f7f7f7;
 $text-c3-light: #f5f5f5;
 $text-c1-pink: #b61984;
+$text-c1-gray: #cbc9c9;
+$text-c1-purple: #ae18e2;
+$text-c1-red: #f50e0e;
 
+
+// Linear gradient
+$lg-c1-purple: linear-gradient(100turn, #ae18e2, #000000);
 //text-size
 $text-xs: 10px;
 $text-1xs: 14px;
 $text-base: 16px;
 $text-xl: 18px;
 $text-2xl: 20px;
+$text-24xl: 24px;
 $text-3xl: 30px;
 $text-4xl: 40px;
 $text-5xl: 50px;

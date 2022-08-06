@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shoes shop</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- GG Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/register.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="../assets/img/image 3.png" alt="..." />
+        </a>
+        <nav class="navbar">
+          <a href="">
+            <img src="../assets/img/image 8.png" alt="..." />
+          </a>
+          <span id="productCount">(1)</span>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </nav>
+      </div>
+    </header>
+    <section class="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link one" href="#">Men </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link two" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link three" href="#">Kid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link four" href="#">Sport</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="register">
+      <div class="container">
+        <h2 class="text-center m-5">Register</h2>
+        <form class="form-content">
+          <div class="form-group">
+            <label for="">Email</label>
+            <input id="email" type="email" class="form-control" />
+            <span id="tbEmail"></span>
+          </div>
+          <div class="form-group">
+            <label for="">Name</label>
+            <input id="name" type="text" class="form-control" />
+            <span id="tbName"></span>
+          </div>
+        </form>
+        <form class="form-content">
+          <div class="form-group">
+            <label for="">Password</label>
+            <input id="password" type="password" class="form-control" />
+            <span class="tbPassword" id="tbPassword"></span>
+          </div>
+          <div class="form-group">
+            <label for="">Phone</label>
+            <input id="phone" type="number" class="form-control" />
+            <span id="tbPhone"></span>
+          </div>
+        </form>
+        <form class="form-content">
+          <div class="form-group password">
+            <label for="">Password confirm</label>
+            <input id="cfPassword" type="password" class="form-control" />
+            <span id="tbCfPassword"></span>
+          </div>
+          <div class="form-group form-gender">
+            <form>
+              <label class="gender">Gender</label>
+              <label class="radio-inline">
+                <input type="radio" id="test1" name="radio-group" checked />
+                <label class="label1" for="test1">Male</label>
+
+                <input type="radio" id="test2" name="radio-group" />
+                <label class="label2" for="test2">Female</label>
+              </label>
+
+              <button id="btnSubmit" type="button">Submit</button>
+            </form>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <img src="/assets/img/image 9.png" alt="" />
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/utils/method.js"></script>
+    <script src="/models/member.js"></script>
+    <script src="/controllers/register.js"></script>
+  </body>
+</html>

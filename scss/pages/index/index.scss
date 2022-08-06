@@ -197,3 +197,87 @@
     color: gray;
     font-size: 20px;
 }
+
+// Product
+
+.feature-product {
+    .container {
+        h3 {
+            text-align: center;
+            height: 48px;
+            font-size: $text-4xl;
+            font-weight: $text-regular;
+            line-height: 48px;
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+
+        .row {
+            gap: 30px 0px;
+
+            .col-md-4 {}
+
+            .card {
+                background-color: $bg-c3-light;
+
+
+                img {
+                    width: 100%;
+                }
+
+                .card-body {
+                    .card-title {
+                        height: 29px;
+                        font-size: $text-24xl;
+                        font-weight: $text-light;
+                        line-height: 29px;
+                    }
+
+                    .card-text {
+                        font-size: $text-2xl;
+                        font-weight: $text-light;
+                        line-height: 24px;
+                        height: 24px;
+                        color: $text-c1-gray;
+                        margin-bottom: 60px;
+                    }
+
+                    .footer-card {
+                        display: flex;
+                        justify-content: flex-start;
+                        text-align: center;
+
+
+                        a {
+                            width: 50%;
+
+                            button {
+                                background: #f8b653;
+                                border: none;
+                                height: 64px;
+                                width: 100%;
+                            }
+                        }
+
+                        p {
+                            width: 50%;
+                            height: 64px;
+                            background-color: #DEDDDC;
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    margin-top: 50px;
+
+    img {
+        height: 242px;
+        width: 100%;
+    }
+}

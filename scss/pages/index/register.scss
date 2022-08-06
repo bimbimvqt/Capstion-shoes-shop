@@ -1,0 +1,156 @@
+@import '../../themes/variable';
+@import '../../base/components/component';
+
+.register {
+    .container {
+        h2 {
+            font-size: $text-4xl;
+            font-weight: $text-regular;
+            line-height: 48px;
+        }
+
+        .form-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .form-group {
+                width: 500px;
+                position: relative;
+
+                label {
+                    font-size: $text-3xl;
+                    font-weight: $text-regular;
+                    line-height: 36px;
+
+                    .label1 {
+                        margin-right: 20px;
+                        right: -150px;
+                        top: 18px;
+                    }
+
+                    .label2 {
+                        top: -62px;
+                        right: -300px;
+                    }
+                }
+
+                .gender {
+                    padding-right: 30px;
+                    position: absolute;
+                    top: 55px;
+                }
+
+                input {
+                    position: relative;
+                    border: 0;
+                    border-bottom: 3px solid transparent;
+                    border-image: $lg-c1-purple;
+                    border-image-slice: 1;
+                    width: 100%;
+                }
+
+                span {
+                    position: absolute;
+                    right: 0;
+                    top: 48px;
+                    color: $text-c1-red;
+                }
+
+                .tbPassword {
+                    top: 30px;
+                }
+
+
+
+                button {
+                    position: absolute;
+                    width: 291px;
+                    height: 50px;
+                    left: 0%;
+                    top: 100%;
+                    right: 0%;
+                    bottom: 0%;
+                    background-color: $text-c1-purple;
+                    color: $text-c1-light;
+                    font-size: $text-3xl;
+                    font-weight: $text-regular;
+                    line-height: 36px;
+                    border: none;
+                }
+
+            }
+
+            .password {
+                margin-top: -90px;
+            }
+
+
+        }
+    }
+}
+
+// Footer
+
+.footer {
+    margin-top: 100px;
+
+    img {
+        width: 100%;
+    }
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 38px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 36px;
+    height: 27px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: "";
+    width: 24px;
+    height: 17px;
+    background: #ae18e2;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    border-radius: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
