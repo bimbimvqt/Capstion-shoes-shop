@@ -4,5 +4,4 @@ function Member() {
   this.password = "";
   this.phone = "";
   this.cfPassword = "";
-  this.gender = "";
 }
