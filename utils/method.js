@@ -82,12 +82,3 @@ function kiemTraPassword(value, selectorError, name) {
     name + " từ 6-20 ký tự, 1 số, </br> 1 chữ hoa, 1 chữ thường, 1 ký tự";
   return false;
 }
-
-function confirmPassword(value, value1, selectorError, name) {
-  if (value !== value1) {
-    document.querySelector(selectorError).innerHTML = name + " không chính xác";
-    return false;
-  }
-  document.querySelector(selectorError).innerHTML = "";
-  return true;
-}
