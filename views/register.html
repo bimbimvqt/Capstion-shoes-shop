@@ -96,45 +96,62 @@
     </section>
     <section class="register">
       <div class="container">
-        <h2 class="text-center m-5">Register</h2>
+        <h2 class="text-center m-5" id="title">Register</h2>
         <form class="form-content">
           <div class="form-group">
             <label for="">Email</label>
             <input id="email" type="email" class="form-control" />
-            <span id="tbEmail"></span>
+            <span id="tbEmail">(*)</span>
           </div>
           <div class="form-group">
             <label for="">Name</label>
             <input id="name" type="text" class="form-control" />
-            <span id="tbName"></span>
+            <span id="tbName">(*)</span>
           </div>
         </form>
         <form class="form-content">
           <div class="form-group">
             <label for="">Password</label>
-            <input id="password" type="password" class="form-control" />
-            <span class="tbPassword" id="tbPassword"></span>
+            <input
+              id="password"
+              type="password"
+              class="form-control"
+              required
+              pattern="'\w+"
+            />
+            <span class="tbPassword" id="tbPassword">(*)</span>
           </div>
           <div class="form-group">
             <label for="">Phone</label>
             <input id="phone" type="number" class="form-control" />
-            <span id="tbPhone"></span>
+            <span id="tbPhone">(*)</span>
           </div>
         </form>
         <form class="form-content">
           <div class="form-group password">
             <label for="">Password confirm</label>
             <input id="cfPassword" type="password" class="form-control" />
-            <span id="tbCfPassword"></span>
+            <span id="tbCfPassword">(*)</span>
           </div>
           <div class="form-group form-gender">
-            <form>
+            <form method="POST">
               <label class="gender">Gender</label>
               <label class="radio-inline">
-                <input type="radio" id="test1" name="radio-group" checked />
+                <input
+                  value="true"
+                  type="radio"
+                  id="test1"
+                  name="radio-group"
+                  checked
+                />
                 <label class="label1" for="test1">Male</label>
 
-                <input type="radio" id="test2" name="radio-group" />
+                <input
+                  value="false"
+                  type="radio"
+                  id="test2"
+                  name="radio-group"
+                />
                 <label class="label2" for="test2">Female</label>
               </label>
 

@@ -1,1 +1,3 @@
-# Capstion-shoes-shop
+# Capstone-shoes-shop
+
+# Capstone project
